@@ -1,0 +1,35 @@
+.banner__img {
+    width: 100vw;
+}
+.banner__titulo {
+    color: #fdfdfd;
+    font-family: 'Pacifico', cursive;
+    left: 50%; /*50% à esq, para alinhamento*/
+    position: absolute; /*posicao absoluta da pag*/
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transform: translate(-50%, -50%); /*eixo x e y*/
+    top: 50%; /*50% para cima, para alinhamento*/
+    width: 100%;
+}
+.banner {
+    position: relative; /*para que seus filhos seja posicionado reltivamente ao pai*/
+}
+@media screen and (min-width: 0) {
+    .banner__titulo {
+        font-size: 3rem;
+    }
+    .banner__img {
+        height: calc(100vh - 51px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner__titulo {
+        font-size: 5.0625rem;
+    }
+    .banner__img {
+        height: calc(100vh - 72px); /*desconsiderando os 72px do cabecalho*/
+        width: 100vw;
+    }
+}

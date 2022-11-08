@@ -1,0 +1,40 @@
+.sobre {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: -7px;
+}
+.sobre__titulo {
+    color: #8D0606;
+    font-family: 'Pacifico', cursive;
+    font-size: 51px;
+}
+.sobre__descricao {
+    color: #8C8888;
+    font-weight: 100;
+}
+
+@media screen and (min-width: 0) {
+    .sobre {
+        padding: 2.5rem 1rem;
+    }
+    .sobre__titulo {
+       font-size: 2rem; 
+    }
+    .sobre__descricao {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+   .sobre {
+        padding: 2.5rem;
+    }
+   .sobre__titulo {
+        font-size: 3.1875rem; 
+    }
+    .sobre__descricao {
+        font-size: 1.75rem;
+        ;
+    }
+}

@@ -1,0 +1,93 @@
+.quem-somos {
+    background-color: #f0f0f0;
+}
+.quem-somos__titulo {
+    color: #8D0606;
+    font-family: 'Pacifico', cursive;
+    font-size: 3.1875rem;
+    margin-bottom: 1rem;
+    padding: 5rem 0 0.5rem 0;
+    text-align: center;
+}
+.quem-somos__descricao {
+    text-align: center;
+    color: #8C8888;
+    font-size: 1.75rem; /*o mesmo que 28px*/
+    font-weight: 100;
+}
+.pessoas {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+.pessoa {
+    align-items: center;
+    color: #8C8888;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+}
+.pessoa__nome {
+    color: #8D0606;
+    font-family: 'Pacifico', cursive;
+    font-size: 23px;
+}
+.pessoa__imagem {
+    background-image: no-repeat;
+    background-position: center; /*posicionando a img no centro*/
+    border-radius: 100%;
+    background-size: cover; /*ocupando todo o espaco*/
+    border: 2px solid #620404;
+    height: 300px ;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    width: 300px;
+}
+.pessoa__imagem--roberta {
+    background-image: url(../img/pessoas/roberta.jpg);
+}
+.pessoa__imagem--marcela {
+    background-image: url(../img/pessoas/marcela.jpg);
+}
+.pessoa__imagem--andreia {
+    background-image: url(../img/pessoas/andreia.jpg);
+}
+
+@media screen and (max-width: 768px) {
+    .quem-somos__titulo {
+        font-size: 40px;
+        padding-top: 1rem;
+    }
+    .quem-somos__descricao {
+        font-size: 1.2rem;
+    }
+    .pessoa:nth-child(2){
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .pessoas {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .quem-somos__titulo {
+        font-size: 40px;
+        padding-top: 1rem;
+    }
+    .quem-somos__descricao {
+        font-size: 1.2rem;
+    }
+    .pessoa:nth-child(2){
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .pessoas {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*
+Atalho background: url(), no-repeat, center / cover*/
